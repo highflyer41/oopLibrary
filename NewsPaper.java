@@ -1,8 +1,10 @@
 public class NewsPaper extends Periodical implements Reservable{
     
     private boolean blackWhite;
+
+    public NewsPaper() {}
     
-    public NewsPaper(String title, Author author, String releaseSchedule,boolean blackWhite, int copies) {
+    public NewsPaper(String title, Author author, Schedule releaseSchedule,boolean blackWhite, int copies) {
         super(title, author, releaseSchedule, copies);
         this.blackWhite = blackWhite;
     }

@@ -1,9 +1,12 @@
 public class LibraryDriver {
     
     public static void main(String[] args) {
-        //GeneralBook gBook = new GeneralBook("Twilight", "JJ Abrams", "Thriller", 2000, 5);
+        
+        LibraryItem item = LibraryItemFactory.createLibraryItem(ItemType.GENERAL_BOOK);
 
-        //System.out.println(gBook.getAuthor());
+        item.setTitle("Successful Test");
+        System.out.println(item.getTitle());
+
     }
     
 }

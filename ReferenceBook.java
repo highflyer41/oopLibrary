@@ -2,6 +2,8 @@ public class ReferenceBook extends Book implements Loanable{
     
     private String subject;
 
+    public ReferenceBook() {}
+
     public ReferenceBook(String title, Author author, String subject, int pages, int copies) {
         super(title, author, pages, copies);
         this.subject = subject;

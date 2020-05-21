@@ -1,8 +1,10 @@
 public class Magazine extends Periodical implements Reservable{
 
     private boolean images;
+
+    public Magazine() {}
     
-    public Magazine(String title, Author author, String releaseSchedule,boolean images, int copies) {
+    public Magazine(String title, Author author, Schedule releaseSchedule,boolean images, int copies) {
         super(title, author, releaseSchedule, copies);
         this.images = images;
     }

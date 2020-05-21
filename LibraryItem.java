@@ -7,6 +7,10 @@ public class LibraryItem {
     private String title;
     private int copies;
 
+    public LibraryItem(){
+        
+    }
+
     public LibraryItem(String title, Author author, int copies) {
         this.title = title;
         this.author = author;
