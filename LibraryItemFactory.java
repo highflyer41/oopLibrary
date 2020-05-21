@@ -3,13 +3,13 @@ public class LibraryItemFactory {
     public static LibraryItem createLibraryItem(ItemType type) {
         switch(type) {
             case GENERAL_BOOK:
-                GeneralBook b = new GeneralBook(); return b;
+                return new GeneralBook();
             case REFERENCE_BOOK:
-                ReferenceBook r = new ReferenceBook(); return r;
+                return new ReferenceBook();
             case MAGAZINE:
-                Magazine m = new Magazine(); return m;
+                return new Magazine();
             case NEWSPAPER:
-                NewsPaper n = new NewsPaper(); return n;
+                return new NewsPaper();
             default:
                 return null;
         }
