@@ -3,10 +3,11 @@
  */
 public class LibraryItem {
 
-    private String title, author;
+    private Author author;
+    private String title;
     private int copies;
 
-    public LibraryItem(String title, String author, int copies) {
+    public LibraryItem(String title, Author author, int copies) {
         this.title = title;
         this.author = author;
         this.copies = copies;
@@ -20,11 +21,11 @@ public class LibraryItem {
         this.title = title;
     }
 
-    public String getAuthor() {
+    public Author getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
+    public void setAuthor(Author author) {
         this.author = author;
     }
 
